@@ -35,7 +35,7 @@ header {
 	right:0;
 	font-family:"Comic Sans MS", cursive, sans-serif;
 }
-#content1 {
+.content1 {
 	background-color:white;
 	min-height:545px;
 	width:640px;
@@ -45,7 +45,7 @@ header {
 	text-align:left;
 	padding:10px 30px;
 }
-#content2 {
+.content2 {
 	background-color:white;
 	height:180px;
 	width:250px;
@@ -99,9 +99,6 @@ button {
 	height:50px;
 	width:150px;
 }
-.port {
-	margin:8px;
-}
 #image1, #image2, #image3, #image4, #image5, #image6 { 
 	height:200px;
 	width:250px;
@@ -138,17 +135,25 @@ button {
 	background: rgba(167, 175, 253, 0.8);
 	padding:10px 0px;
 }
-@media screen and (max-width:1100px) {
+@media screen and (max-width:980px) {
     #lefty, #righty {
-        margin:0;    
+        margin:0px 50px;    
     }
     #wrapper {
         width:100%;
         margin:0;
     }
-    #content2 {
-        text-align:center;
-        width:640px;
+    #portfolio {
+        padding:0px 20px;
+        width:auto;
+    }
+    #image1, #image2, #image3, #image4, #image5, #image6 {
+        margin:20px 0;
+        display:block;
+        clear:both;
+        width:350px;
+        height:280px;
+        background-size:cover;
     }
 }
 @media screen and (max-width:768px) {
@@ -156,28 +161,76 @@ button {
         width:100%;
         margin:0;
     }
-    #content2, #content1 {
+    .content2 {
         margin:20px 0px;
-        width:80%;
+        width:calc(100% - 102px);
     }
-    
+    #portfolio {
+        width:calc(100% - 82px);
+    }
+    #image1, #image2, #image3, #image4, #image5, #image6 {
+        display:inline-block;
+        margin:20px;
+        width:250px;
+        height:200px;
 }
-@media screen and (max-width:450px) {
+@media screen and (max-width:640px) {
+    html, body, header, footer {
+        width:640px;
+        margin:0;
+    }
+    header {
+        height:120px;
+    }
+    #lefty {
+        margin:0;
+        width:100%;
+    }
+    #righty {
+        margin:0px;
+        width:100%;
+        
+    }
+    .content1, .content2 {
+        margin:20px 0px;
+    }
+    #image1, #image2, #image3, #image4, #image5, #image6 {
+        margin:20px 0;
+        padding:10px 0;
+        display:block;
+        clear:both;
+        width:400px;
+        height:320px;
+        background-size:cover;
+    }
+    #cats {
+        width:auto;
+        height:auto;
+        clear:both;
+        float:none;
+        display:block;
+        margin:auto;
+    }
+}@media screen and (max-width:450px) {
     html, body, header, footer {
         width:450px;
         margin:0;
     }
     #lefty {
         margin:0;
-        width:100px;
-        font-size:10px;
+        width:100%;
     }
     #righty {
         margin:0px;
-        font-size:15px;
-        
+        font-size:100%;   
     }
-    #content1, #content2 {
-        margin:20px 0px;
+    #image1, #image2, #image3, #image4, #image5, #image6 {
+        margin:20px 0;
+        padding:10px 0;
+        display:block;
+        clear:both;
+        width:330px;
+        height:264px;
+        background-size:cover;
     }
 }
