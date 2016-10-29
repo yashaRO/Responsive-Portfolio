@@ -155,13 +155,21 @@ button {
         height:280px;
         background-size:cover;
     }
+    #cats {
+        width:auto;
+        height:auto;
+        clear:both;
+        float:none;
+        display:block;
+        margin:auto;
+    }
 }
 @media screen and (max-width:768px) {
     html, body, header, footer {
         width:100%;
         margin:0;
     }
-    .content2 {
+    .content1, .content2 {
         margin:20px 0px;
         width:calc(100% - 102px);
     }
@@ -173,6 +181,14 @@ button {
         margin:20px;
         width:250px;
         height:200px;
+    }
+    #cats {
+        width:auto;
+        height:auto;
+        float:left;
+        display:inline;
+        margin-right:10px;
+    }
 }
 @media screen and (max-width:640px) {
     html, body, header, footer {
@@ -181,6 +197,7 @@ button {
     }
     header {
         height:120px;
+        width:100%;
     }
     #lefty {
         margin:0;
